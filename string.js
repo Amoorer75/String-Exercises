@@ -7,8 +7,20 @@
 // answer below:
 
 
+ function DrEvil(amount){
+     
+if (parseInt(amount) === 1000000){
+  
+    return amount + " dallers" + ' pinky'
+}else
+if (amount < 1000000){
 
+    return amount + " dallers"
+}
 
+}
+
+console.log(DrEvil())
 
 
 
@@ -20,6 +32,13 @@
 //mixUp('dog', 'dinner'): 'dig donner'
 //write answer below 
 
+function mixup(str1,str2){
+ let a = str1.slice(0,2)
+ let b = str2.slice(0,2)
+    return a + str2[2] + " " + b + str1[2] 
+}
+
+console.log(mixup("mix", "pod"))
 
 
 
@@ -31,6 +50,16 @@
 //fixstart('babble'): 'ba**le'
 //write answer below
 
+function fixStart(str){
+
+    let cha = str.charAt(0)
+    let endstr = str.slice(1,str.length)
+    let newWord = cha + endstr.replace(cha , "*")
+       return newWord
+    
+    
+    }
+console.log(fixStart("babble"));
 
 
 
